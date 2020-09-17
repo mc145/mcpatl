@@ -2,6 +2,8 @@
 #include<algorithm>
 #include<stack> 
 #include<queue> 
+#include<stdio.h> 
+#include<stdlib.h> 
 #include<vector>
 
 using namespace std; 
@@ -24,8 +26,25 @@ void insert(int new_data){
 }
 
 void remove(int pos){
-    
-    
+  Node *temp1 = head; 
+
+  if(pos == 1){
+      head = temp1->next; 
+      free(temp1); 
+      
+  }
+  else{
+      for(int i = 0; i<pos-2; i++){
+          temp1 = temp1->next; 
+      }
+      Node *temp2 = temp1->next; 
+      temp1->next = temp2->next; 
+
+      free(temp2); 
+  }
+
+
+
 }
 
 void display(){
@@ -62,4 +81,8 @@ display();
 reverseList(); 
 cout << '\n'; 
 display(); 
+cout << '\n';
+remove(3);  
+display(); 
+ 
 }
