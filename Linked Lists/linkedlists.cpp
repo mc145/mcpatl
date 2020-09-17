@@ -71,18 +71,14 @@ void reverseList(){
    head = p; 
 }
 
-int main(){
-    insert(1); 
-    insert(4);
-    insert(5); 
-    insert(6); 
+Node* traverse(int n){
+    Node *ans = head; 
 
-display(); 
-reverseList(); 
-cout << '\n'; 
-display(); 
-cout << '\n';
-remove(3);  
-display(); 
- 
+    for(int i = 0; i<n-1; i++){
+        ans = ans->next; 
+    }
+    return ans; 
+}
+int main(){
+
 }
