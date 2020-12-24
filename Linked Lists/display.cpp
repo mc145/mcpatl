@@ -3,8 +3,7 @@
 using namespace std; 
 
 
-struct Node{
-    int data; 
+struct Node{ int data; 
     struct Node *next; 
 };
 struct Node *head = NULL; 
@@ -19,5 +18,4 @@ void display(){
 }
 
 int main(){
-     
 }

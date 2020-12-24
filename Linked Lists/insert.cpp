@@ -18,5 +18,6 @@ void insert(int new_data){
 }
 
 int main(){
+
     
 }

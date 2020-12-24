@@ -25,7 +25,4 @@ void reverseList(){
 }
 
 int main(){
-    int a = 1; 
-    string b = a; 
-
 }
